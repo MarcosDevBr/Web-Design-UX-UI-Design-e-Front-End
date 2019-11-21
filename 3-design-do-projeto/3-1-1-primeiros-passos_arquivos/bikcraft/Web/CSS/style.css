@@ -9,6 +9,10 @@ p {
     line-height: 20px;
 }
 
+img {
+    display: block;
+}
+
 .btn{
     border: 3px solid #DCB30D;
     padding: 10px 30px;
@@ -18,6 +22,13 @@ p {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .1em;
+}
+.btn.btn-preto:hover {
+    
+    color: #000;
+    border-color: #000;
+
+
 }
 .btn:hover {
     color: #fff;
@@ -31,6 +42,7 @@ p {
     color: #000;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 40px;    
 }
 
 .subtitulo:after {
@@ -49,6 +61,7 @@ p {
     width: 100%;
     background: #DCB30D;            /*Amarelo*/
     padding: 15px 0;
+    z-index: 10;
 }
 
 .header_menu {
@@ -81,9 +94,9 @@ color: #fff;
 .introducao {
     width: 100%;
     height: 387px;
-    background: url("../img/Bg-intro.png"); no-repeat center;
+    background: url("../img/Bg-intro.png") no-repeat center;
     background-size: cover;
-    margin-top: 95.63px;
+    margin-top: 90px;
     text-align: center;
     padding-top: 90px;
 
@@ -102,8 +115,6 @@ color: #fff;
     margin: 0 auto;
     color: #fff;
     margin-bottom: 40px;
-
-    
 }
 
 
@@ -172,4 +183,74 @@ color: #fff;
     padding: 20px;
  
 }
-  
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+/*Portfólio*/
+
+.portfolio {
+    width: 100%;
+    background: #000;
+    padding: 40px;
+}
+
+.portfolio .subtitulo {
+    color: #DCB30D;
+}
+
+.portfolio .subtitulo:after {
+    content:"";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #DCB30D;
+    margin: 8px auto;
+}
+
+.portfolio_lista li:last-child {
+    margin-top: 20px;
+}
+.portfolio p{
+    color: #fff;
+}
+
+/*Qualidade*/
+.qualidade {
+padding: 60px 0;
+}
+.qualidade img{
+margin: 0 auto;
+}
+
+.qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+.qualidade_lista li h3{
+    font-weight: bold;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+.qualidade_lista li h3:after {
+    content:"";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+    
+
+
+
