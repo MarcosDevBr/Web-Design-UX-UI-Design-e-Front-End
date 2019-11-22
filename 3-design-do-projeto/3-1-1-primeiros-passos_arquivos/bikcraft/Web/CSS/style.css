@@ -158,31 +158,20 @@ color: #fff;
     letter-spacing: .1em;
     margin-top: 20px;
 }
-
 .produtos_lista li p{
     padding: 10px 20px 20px 20px;
 }
-
-
 .produtos_lista li h3:after {
     content:"";
     display: block;
     width: 60px;
     height: 3px;
     background: #000;
-    margin: 2px auto;
-    
-
-
-
-
-}
+    margin: 2px auto;}
 
 .produtos_incone {
     background: #000;
-    padding: 20px;
- 
-}
+    padding: 20px;}
 
 .call {
     padding-top: 40px;
@@ -224,13 +213,31 @@ color: #fff;
 
 /*Qualidade*/
 .qualidade {
-padding: 60px 0;
+    padding: 60px 0;
+    position: relative;
+}
+.qualidade::after{
+    content:"";
+    width: 706px;
+    height: 82px;
+    display: block;
+    background: url("../img/Marca.png") no-repeat center;   
+    position: absolute;
+    top: 251px;
+    right: 129px;
+    z-index: -1;
+}
+
+.qualidade_lista {
+    padding-top: 20px;
 }
 .qualidade img{
 margin: 0 auto;
 }
 
+
 .qualidade_lista li {
+    margin-top: 39px;
     text-align: center;
     padding: 0 40px;
 }
@@ -249,8 +256,69 @@ margin: 0 auto;
     width: 60px;
     height: 3px;
     background: #000;
-    margin: 2px auto;
+    margin: 6px auto;
+}
+    /*Quebra*/
+
+.quebra {
+    width: 100%;
+    height: 220px;
+    background-color: tomato;
+    background: url("../img/bg_footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+    }
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #DCB30D;
+    text-transform: uppercase;
+    font-weight: bold;
     
+}
 
+.footer h3::after{
+content: "";
+display: block;
+width: 60px;
+height: 3px;
+background: #DCB30D;
+margin: 10px 0 10px 0;
+}
 
+.footer_historia {
+    padding-right: 40px;
+}
+
+.footer_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.footer_redes ul li{
+display: inline-block;
+margin-right: 10px;
+}
+
+.footer_redes ul li a {
+    border: 3px solid #DCB30D;
+    display: block;
+    padding: 6px;
+}
+.footer_redes ul li a:hover{
+    border-color: #fff;
+
+}
 
