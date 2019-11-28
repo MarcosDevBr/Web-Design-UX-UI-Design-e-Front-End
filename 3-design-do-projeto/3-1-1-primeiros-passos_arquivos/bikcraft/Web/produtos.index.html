@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/produtos.css">
     <link rel="stylesheet" href="CSS/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 
 </head>
 <body>
@@ -31,16 +32,16 @@
     
 <section class="introducao-interna interna_produtos">
     <div class="container">
-        <h1>Produtos</h1>
-        <p>Conheça todos os nossos produtos</p>
+        <h1 data-anime="400" class="fadeInDown">Produtos</h1>
+        <p data-anime="800" class="fadeInDown">Conheça todos os nossos produtos</p>
     </div>
 </section>
 
 
-<section class="container produtos_item">
+<section class="container produtos_item fadeInDown" data-anime="1200">
         <div class="grid-11">
             <img src="img/Produtos/bakcraft-passeio-1.jpg" alt="Bickcraft Passeio">
-            <h2>Passeio</h2>
+            <h2 data-anime="400" class="fadeInDown">Passeio</h2>
         </div>
             <div class="grid-5 produto_icone"><img src="img/Produtos/passeio.svg"></div>
             <div class="grid-8"><img src="img/Produtos/bakcraft-passeio-2.jpg" alt="Bickcraft Passeio"></div></div>
@@ -168,7 +169,8 @@
             </div>
         </footer>
 
-
+        <script src="./js/simple-anime.js"></script>
+        <script src="./js/script.js"></script>
 
 
 </body>

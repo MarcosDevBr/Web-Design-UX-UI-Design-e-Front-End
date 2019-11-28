@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 
 </head>
 <body>
@@ -30,18 +31,18 @@
     
 <section class="introducao">
     <div class="container">
-        <h1>Bicicletas feitas a mão</h1>
-        <blockquote class="quote-externo">
+        <h1 data-anime="400" class="fadeInDown">Bicicletas feitas a mão</h1>
+        <blockquote data-anime="800" class="quote-externo">
             <p>"não tenha nada em sua casa que você
             não considere útil ou acredita ser bonito"
             </p>
             <cite>WILLIAM MIRROS</cite>
         </blockquote>
-            <a href="../Web/produtos.html" class="btn">Orçamento</a>
+            <a data-anime="1200" href="../Web/produtos.html" class="btn">Orçamento</a>
     </div>
 </section>
 
-                <section class="produtos container">
+                <section class="produtos container fadeInDown" data-anime="1600">
                 <h2 class="subtitulo">Produtos</h2> 
                     <ul class="produtos_lista">
                         <li class="grid-1-3">
@@ -82,9 +83,9 @@
         <div class="container">
             <h2 class="subtitulo">Portfólio</h2>
             <ul class="portfolio_lista">
-                <li class="grid-8"><img src="img/potfolio/foto retro.jpg" alt="Bicicleta retro"</li>
-                <li  class="grid-8"><img src="img/potfolio/foto passeio.jpg"</li>
-                <li  class="grid-16"><img src="img/potfolio/foto esporte.jpg" </li>
+                <li class="grid-8"><img src="img/potfolio/foto retro.jpg" alt="Bicicleta retro"></li>
+                <li  class="grid-8"><img src="img/potfolio/foto passeio.jpg"></li>
+                <li  class="grid-16"><img src="img/potfolio/foto esporte.jpg"> </li>
             </ul>
 
             <div class="call">
@@ -132,39 +133,39 @@
                 <cite>WILLIAM MORRIS</cite>
             </blockquote>
         </section>
-        <footer>
-            <div class="footer">
-                <div class="container">
-               
-                <div class="grid-8 footer_historia">
-                <h3>Nossa História</h3>
-                <p>Existem muitas variações das passagens do Lorem Ipsum disponívei</p>
-                </div>
-               
-                <div class="grid-4 footer_contato">
-                    <h3>Contato</h3>
-                  <ul>
-                    <li>- 31 9999-9999</li>
-                    <li>-contato@bikcraft.com</li>
-                    <li>-Botafo - RJ</li></li>
-                  </ul>
-                </div>
+<footer>
+<div class="footer">
+    <div class="container">
+    
+    <div class="grid-8 footer_historia">
+    <h3>Nossa História</h3>
+    <p>Existem muitas variações das passagens do Lorem Ipsum disponívei</p>
+    </div>
+    
+    <div class="grid-4 footer_contato">
+        <h3>Contato</h3>
+        <ul>
+        <li>- 31 9999-9999</li>
+        <li>-contato@bikcraft.com</li>
+        <li>-Botafo - RJ</li></li>
+        </ul>
+    </div>
 
-                <div class="grid-4 footer_redes">
-                <h3>Redes Socias</h3>
-                <ul>
-                        <li><a href="http://facebook.com" target="_blank"><img src="img/redes-socias/facebook.svg"></a></li>
-                        <li><a href="http://instagram.com" target="_blank"><img src="img/redes-socias/instagram.svg"></a></li>
-                        <li><a href="http://twitter.com" target="_blank"><img src="img/redes-socias/twitter.svg"></a></li>
-                </ul>
-                </div>
-
-
-                </div>
-            </div>
-        </footer>
+    <div class="grid-4 footer_redes">
+    <h3>Redes Socias</h3>
+    <ul>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/redes-socias/facebook.svg"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/redes-socias/instagram.svg"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="img/redes-socias/twitter.svg"></a></li>
+    </ul>
+    </div>
 
 
+    </div>
+</div>
+</footer>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/script.js"></script>
 
 
 </body>

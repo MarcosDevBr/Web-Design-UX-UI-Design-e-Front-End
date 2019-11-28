@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/portfolio.css">
     <link rel="stylesheet" href="CSS/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
+    
 
 </head>
 <body>
@@ -31,28 +33,44 @@
     
 <section class="introducao-interna interna_portfolio">
     <div class="container">
-        <h1>Portfólio</h1>
-        <p>Conheça os projetos que amamos mostrar</p>
+        <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+        <p data-anime="800" class="fadeInDown">Conheça os projetos que amamos mostrar</p>
     </div>
 </section>
 
-<section class="container">
-    <blockquote class="quote_clientes">
-        <p>"No mundo atual,a contínua expansão de nossa 
-            atividade cumpre um papel essencial na formulação da 
-            gestão inovadora da qual fazemos parte."
-        </p>
-        <cite>Barbara Moss</cite>
-    </blockquote>
+<section class="container fadeInDown" data-slide="quote" data-anime="1200" >
+            <blockquote class="quote_clientes">
+                    <p>"No mundo atual,a contínua expansão de nossa 
+                    atividade cumpre um papel essencial na formulação da 
+                    gestão inovadora da qual fazemos parte."</p>
+                    <cite>Barbara Moss</cite>
+            </blockquote>
+
+            <blockquote class="quote_clientes">
+                    <p>"todos deveriam adotar o uso da bicicleta ! muito bom e faz bem a saúde."
+                    </p>
+                    <cite>XaropeRodrigues</cite>
+            </blockquote>
+
+                <blockquote class="quote_clientes">
+                    <p>"Quando andar de bicicleta pela cidade se transforma em um ato político."</p>
+                    <cite>Erica Telles</cite>
+                </blockquote>
 </section>
 
 <section class="portfolio">
-    <div class="container">
+    <div class="container" data-slide="portfolio">
         <ul class="portfolio_lista">
             <li class="grid-8"><img src="img/potfolio/foto retro.jpg" alt="Bicicleta retro"></li>
             <li  class="grid-8"><img src="img/potfolio/foto passeio.jpg"></li>
             <li  class="grid-16"><img src="img/potfolio/foto esporte.jpg"></li>
         </ul>
+
+        <ul class="portfolio_lista">
+                <li  class="grid-8"><img src="img/potfolio/foto passeio.jpg"></li>
+                <li class="grid-8"><img src="img/potfolio/foto retro.jpg" alt="Bicicleta retro"></li>
+                 <li  class="grid-16"><img src="img/potfolio/foto esporte.jpg"></li>
+            </ul>
 
     </div>
     </section>
@@ -64,39 +82,45 @@
                 <cite>WILLIAM MORRIS</cite>
             </blockquote>
         </section>
-        <footer>
-            <div class="footer">
-                <div class="container">
-               
-                <div class="grid-8 footer_historia">
-                <h3>Nossa História</h3>
-                <p>Existem muitas variações das passagens do Lorem Ipsum disponívei</p>
-                </div>
-               
-                <div class="grid-4 footer_contato">
-                    <h3>Contato</h3>
-                  <ul>
-                    <li>- 31 9999-9999</li>
-                    <li>-contato@bikcraft.com</li>
-                    <li>-Botafo - RJ</li></li>
-                  </ul>
-                </div>
+<footer>
+<div class="footer">
+    <div class="container">
+    
+    <div class="grid-8 footer_historia">
+    <h3>Nossa História</h3>
+    <p>Existem muitas variações das passagens do Lorem Ipsum disponívei</p>
+    </div>
+    
+    <div class="grid-4 footer_contato">
+        <h3>Contato</h3>
+        <ul>
+        <li>- 31 9999-9999</li>
+        <li>-contato@bikcraft.com</li>
+        <li>-Botafo - RJ</li></li>
+        </ul>
+    </div>
 
-                <div class="grid-4 footer_redes">
-                <h3>Redes Socias</h3>
-                <ul>
-                        <li><a href="http://facebook.com" target="_blank"><img src="img/redes-socias/facebook.svg"></a></li>
-                        <li><a href="http://instagram.com" target="_blank"><img src="img/redes-socias/instagram.svg"></a></li>
-                        <li><a href="http://twitter.com" target="_blank"><img src="img/redes-socias/twitter.svg"></a></li>
-                </ul>
-                </div>
-
-
-                </div>
-            </div>
-        </footer>
+    <div class="grid-4 footer_redes">
+    <h3>Redes Socias</h3>
+    <ul>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/redes-socias/facebook.svg"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/redes-socias/instagram.svg"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="img/redes-socias/twitter.svg"></a></li>
+    </ul>
+    </div>
 
 
+    </div>
+</div>
+</footer>
+<!--javaScript-->
+<script src="./js/simple-anime.js"></script>
+<script src="./js/simple-slide.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+<!--javaScript-->
 
 
 </body>
