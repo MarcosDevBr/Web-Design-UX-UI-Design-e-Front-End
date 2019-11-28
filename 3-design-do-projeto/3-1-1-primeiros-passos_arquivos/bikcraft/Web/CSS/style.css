@@ -11,6 +11,7 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 .btn{
@@ -224,11 +225,11 @@ color: #fff;
 
 .produtos_incone {
     background: #000;
-    padding: 50px;
-   
-    
+    text-align: center;
 }
-    
+.produtos_incone img{
+    margin: 0 auto;
+}
 
 .call {
     padding-top: 40px;
