@@ -39,18 +39,27 @@
 </section>
 
 
-             <section class="contato container fadeInDown" data-anime="800">
+             <section class="contato container fadeInDown" data-anime="1200">
                                  
-             <form id="form_orcamento" class="contato_form grid-8">
-            <label for="nome">Nome</label>
-             <input type="text" id="nome">
-             <label for="email">E-mail</label>
-            <input type="text" id="email">
-            <label for="telefone">Telefone</label>
-             <input type="text" id="telefone">
-            <label for="espec">Especificações</label>
-             <textarea id="telefone"></textarea>
-             <button type="submit" class="btn btn-preto">Enviar</button>
+             <form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form grid-8 formphp">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+
+                    <label class="nao_aparece">Se você não é um robô,deixe em branco
+                    <input type="text" class="nao_aparece" name="leaveblank">
+                    </label>
+
+                    <label class="nao_aparece">Se você não é um robô,não mude este campo
+                            <input type="text" class="nao_aparece" name="dontchange" value="http://">
+                            </label>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
                  </form>
                         <div class="contato_dados grid-8"> 
                           <h3>Dados</h3>
@@ -110,6 +119,7 @@
             </div>
         </footer>
         <script src="./js/simple-anime.js"></script>
+        <script src="./js/simple-form.js"></script>
         <script src="./js/script.js"></script>
 
 

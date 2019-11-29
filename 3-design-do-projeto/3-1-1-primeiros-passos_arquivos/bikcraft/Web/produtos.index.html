@@ -41,7 +41,7 @@
 <section class="container produtos_item fadeInDown" data-anime="1200">
         <div class="grid-11">
             <img src="img/Produtos/bakcraft-passeio-1.jpg" alt="Bickcraft Passeio">
-            <h2 data-anime="400" class="fadeInDown">Passeio</h2>
+            <h2 data-anime="1200" class="fadeInDown">Passeio</h2>
         </div>
             <div class="grid-5 produto_icone"><img src="img/Produtos/passeio.svg"></div>
             <div class="grid-8"><img src="img/Produtos/bakcraft-passeio-2.jpg" alt="Bickcraft Passeio"></div></div>
@@ -78,65 +78,74 @@
 </div>
 
 </section>
-        <section class="container produtos_item">
-                <div class="grid-11">
-                    <img src="img/Produtos/bakcraft-retro-1.jpg" alt="Bickcraft Retro">
-                    <h2>Retrô</h2>
-                </div>
-                    <div class="grid-5 produto_icone"><img src="img/Produtos/retro.svg"></div>
-                    <div class="grid-8"><img src="img/Produtos/bakcraft-retro-2.jpg" alt="Bickcraft Retro"></div></div>
-                    <div class="grid-8 produto_info">
-                    <p>O verdadeiro segredo da felicidade está em ter um genuíno
-                    interesse por todos os detalhes da vida cotidian</p>
-                        <ul>
-                            <li>Conforto</li>
-                            <li>Velocidade</li>
-                            <li>Design</li>
-                            <li>Versatilidade</li>
-                        </ul>
-                </div>
-                
-                </section>
+<section class="container produtos_item">
+    <div class="grid-11">
+        <img src="img/Produtos/bakcraft-retro-1.jpg" alt="Bickcraft Retro">
+        <h2>Retrô</h2>
+    </div>
+        <div class="grid-5 produto_icone"><img src="img/Produtos/retro.svg"></div>
+        <div class="grid-8"><img src="img/Produtos/bakcraft-retro-2.jpg" alt="Bickcraft Retro"></div></div>
+        <div class="grid-8 produto_info">
+        <p>O verdadeiro segredo da felicidade está em ter um genuíno
+        interesse por todos os detalhes da vida cotidian</p>
+            <ul>
+                <li>Conforto</li>
+                <li>Velocidade</li>
+                <li>Design</li>
+                <li>Versatilidade</li>
+            </ul>
+    </div>
+    
+    </section>
 
-                <section class="orcamento">
-                    <div class="container">
-                      <h2 class="subtitulo">Orçamento</h2>  
-                      <form id="form_orcamento" class="form grid-8">
-                          <label for="nome">Nome</label>
-                          <input type="text" id="nome">
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email">
-                            <label for="telefone">Telefone</label>
-                            <input type="text" id="telefone">
-                            <label for="espec">Especificações</label>
-                            <textarea id="telefone"></textarea>
-                            <button type="submit" class="btn">Enviar</button>
-                     </form>
-                     <div class="orcamento_dados grid-8"> 
-                     <h3>Dados</h3>
-                         <span> +55 3193621041</span>
-                        <span>orcamento@Bickcraft.com</span>
-                        <h3>Monte sua Bickcraft</h3>
-                        <p>Escolha suas Especificações</p>
-                        <ul>
-                            <li>- Cores</li>
-                            <li>- Estilo</li>
-                            <li>- Medidas</li>
-                            <li>- Acessórios</li>
-                            <li>- E outros</li>
-                        </ul>
-                    </div>
-                    </div>
-                </section>
+    <section class="orcamento">
+        <div class="container">
+            <h2 class="subtitulo">Orçamento</h2>  
+            <form id="form_orcamento" method="POST" action="./enviar.php" class="form grid-8 formphp">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
 
-            
-        <section class="quebra">
-            <blockquote class="quote-externo container">
-                <p>"O verdadeiro segredo da felicidade está em ter um genuíno
-                    interesse por todos os detalhes da vida cotidiana"</p>
-                <cite>WILLIAM MORRIS</cite>
-            </blockquote>
-        </section>
+                    <label class="nao_aparece">Se você não é um robô,deixe em branco
+                    <input type="text" class="nao_aparece" name="leaveblank">
+                    </label>
+
+                    <label class="nao_aparece">Se você não é um robô,não mude este campo
+                        <input type="text" class="nao_aparece" name="dontchange" value="http://">
+                        </label>
+
+                <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+        </form>
+        <div class="orcamento_dados grid-8"> 
+        <h3>Dados</h3>
+            <span> +55 3193621041</span>
+        <span>orcamento@Bickcraft.com</span>
+        <h3>Monte sua Bickcraft</h3>
+        <p>Escolha suas Especificações</p>
+        <ul>
+            <li>- Cores</li>
+            <li>- Estilo</li>
+            <li>- Medidas</li>
+            <li>- Acessórios</li>
+            <li>- E outros</li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+
+<section class="quebra">
+<blockquote class="quote-externo container">
+<p>"O verdadeiro segredo da felicidade está em ter um genuíno
+    interesse por todos os detalhes da vida cotidiana"</p>
+<cite>WILLIAM MORRIS</cite>
+</blockquote>
+</section>
         <footer>
             <div class="footer">
                 <div class="container">
