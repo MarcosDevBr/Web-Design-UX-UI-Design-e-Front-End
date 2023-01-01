@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/origamid/simple-slide#readme",
   "devDependencies": {
-    "css-loader": "^3.0.0",
+    "css-loader": "^6.7.3",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "mini-css-extract-plugin": "^0.7.0",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "mini-css-extract-plugin": "^2.7.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
